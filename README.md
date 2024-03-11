@@ -1,6 +1,6 @@
-# Project_Customer-Success-Co-Pilot
+# Audience Sentiment Analysis 
  
-**Customer Success Co-pilot**
+**Audience Sentiment Analysis**
 
 This project serves as the culmination of a 9-week data analytics bootcamp with IronHack.
 
@@ -24,60 +24,65 @@ This project serves as the culmination of a 9-week data analytics bootcamp with 
 The project is structured as a complete pipeline that includes every step of the process.
 
 **Source Data** 
+
+(1) Tweet Data 
+Can be accessed under tweet_emoitions.csv (also in this repo) 
+
 * Inspiration: Point 15 in Interview Query: https://www.interviewquery.com/p/classification-projects
 * Data source: Kaggle: https://www.kaggle.com/datasets/pashupatigupta/emotion-detection-from-text/data
   Includes 40,000 tweets, each tagged with an emotion
 
+(2) Amazon Book Review Data
+Can be accessed under tripadvisor_hotel_reviews.csv 
+
+* Data source: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
+
 **Problem Type**
-This project addresses a (multi-)classification problem wherein the goal is to classify the emotion of a given text from a selection of emotions. 
+This project addresses a multi-classification problem wherein the goal is to classify the emotion of a given text from a selection of emotions: positive, negative, neutral.
 
 **Business Case** 
 
   **Mission**
   
-  The mission is to enable customer success managers to better prioritize their workload through a more rapid understanding of customer   
-  sentiment.
+Problem statement:
+Companies receive more and more text-based feedback and fail to leverage that input to its maximum potential through effective prioritisation
 
-  Initially, the concept of customer success focused mainly on reducing churn and maximizing revenue. However, it has evolved into a   
-  comprehensive strategy for building strong relationships with customers, ensuring their success, and becoming their trusted partner.
+Proposed solution:
+My model will empower companies to unleash the potential of their customer-base through categorising customer feedback at scale
 
-  The average salary of a customer success manager (CSM) in Germany is €74,192 with an average annual bonus of €5,038. Factoring in employer   taxes, that’s an annual investment of €95K per year per customer success manager.  
-  (Source: https://www.salaryexpert.com/salary/job/customer-success-manager/germany) 
- 
-  Given the substantial cost of this resource, companies need to maximize efficiency, particularly in the context of a challenging   
-  fundraising environment. Across the tech space, with the backdrop of mass layoffs, customer success managers are being asked to do more 
-  with less and need to be masters of prioritization.
-
-  Introducing: The Customer Success Co-pilot: the tool that enables better understanding of customer sentiment and workload prioritization.
-
-**Project Overview**
-
-The Customer Success Co-pilot project leverages cutting-edge technologies such as Natural Language Processing (NLP) and Machine Learning to revolutionize the way customer success managers prioritize their workload.
+See 'Final Project Presentation' (PDF) for further detail
 
 **Key Technologies**
 
- * Natural Language Processing (NLP):
 
-Our project utilizes advanced NLP techniques to analyze and understand the sentiment of customer feedback.
-NLP algorithms process large volumes of text data from customer reviews to extract valuable insights.
-By employing NLP, we can automatically categorize customer sentiments, enabling faster decision-making and workload prioritization.
+* Machine Learning algorithms
 
-* Machine Learning:
+Random Forest 
+Naive Bayes 
+Neural Networks
 
-The heart of our project lies in Machine Learning algorithms that learn from data to make predictions.
-We explore various Machine Learning models such as Random Forest, Naive Bayes, and Neural Networks to classify customer sentiments.
-These models are trained on a dataset of 40,000 tweets, each tagged with an emotion, to accurately predict the emotions of customer reviews.
-Machine Learning empowers our tool, The Customer Success Co-pilot, to provide actionable insights for customer success managers.
+* Machine Learning techniques
 
-* Significance
+KerasClassifier: A wrapper provided by scikeras.wrappers for integrating Keras models into scikit-learn pipelines
+GridSearchCV: A technique for hyperparameter tuning, used to systematically search for the best parameters
 
-By integrating NLP and Machine Learning, we provide an innovative solution to address the challenges faced by customer success managers in prioritizing their workload.
-Our project showcases the power of advanced technologies in enhancing decision-making processes and improving efficiency in customer-centric roles.
+* Python libraries
+ 
+numpy: for numerical computing with arrays
+pandas: for data manipulation and analysis
+scikit-learn: for machine learning tasks such as model selection, metrics calculation, and data preprocessing
+tensorflow: for building and training neural networks
+joblib: for saving/loading models
+pickle: for serializing Python objects
 
-The incorporation of NLP and Machine Learning underscores our commitment to leveraging state-of-the-art techniques to drive impactful business outcomes.
+**Key documents in repository** 
 
-**Documents in Repository** 
+* ipynb file of models
+Models 1 - 3.1
+TEST 1 and TEST 2 - Trained model tested on new data
 
-* ipynb file of model
-* csv file of tweet emotions
-* Canva presentation - project pitch
+* csv files
+Referenced within ipynb Notebooks 
+
+* PDF
+Final Project Presentation - gives narrative of the project
